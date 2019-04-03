@@ -18,7 +18,7 @@ in语法(变量后必需加#号)
 ```
 /**
  * @param {*} sqlText 带变量的 sql 字符串
- * @param {*} entity 参数对象
+ * @param {*} entity 参数对象(sql 字符串中变量无法与 entity 中的 key 对应时，则替换为1=1)
  * @return {sql,params}
  */
 sax(sqlText, entity)
